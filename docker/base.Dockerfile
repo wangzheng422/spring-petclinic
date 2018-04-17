@@ -4,7 +4,7 @@ FROM java:8
 RUN mkdir -p /cood
 ADD * /code/
 ADD .mvn /code/.mvn
-RUN cd /code && ls -hl /code/src/main/wro/wro.properties && ./mvnw package -D maven.test.skip=true || echo 'fail test'
+RUN cd /code && ls -hl /code && ls -hl /code/src/main/wro/wro.properties && ./mvnw package -D maven.test.skip=true || echo 'fail test'
 
 #&& cp /code/targe/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar /app.jar
 
