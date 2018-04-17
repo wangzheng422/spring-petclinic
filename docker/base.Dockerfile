@@ -1,6 +1,7 @@
 FROM java:8
 
-WORKDIR /code
+#WORKDIR /code
+RUN mkdir -p /cood
 ADD * /code/
 ADD .mvn /code/.mvn
 RUN cd /code && ls -hl /code/src/main/wro/wro.properties && ./mvnw package -D maven.test.skip=true || echo 'fail test'
