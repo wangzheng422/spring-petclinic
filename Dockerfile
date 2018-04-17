@@ -1,6 +1,4 @@
-FROM java:8
-
-RUN apt-get -y update && apt-get -y install maven
+FROM maven:3-jdk-8
 
 WORKDIR /code
 ADD * /code/
