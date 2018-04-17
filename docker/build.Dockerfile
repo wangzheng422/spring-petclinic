@@ -1,4 +1,4 @@
-FROM java:8
+FROM spring-petclinic:base
 
 WORKDIR /code
 ADD * /code/
