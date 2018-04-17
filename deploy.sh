@@ -12,4 +12,4 @@ export GIT_HOST=10.11.0.5:9988
 export NGINX=nginx-10-11-0-6
 export AUTH_TOKEN=97898f42b8c95098df3f82037f43bf13fa33ff53
 
-docker build -t ${REGISTRY}/spring-petclinic ./
+docker build -f docker/base.Dockerfile -t ${REGISTRY}/spring-petclinic ./
