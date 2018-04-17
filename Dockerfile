@@ -1,5 +1,7 @@
 FROM java:8
 
+RUN apt update && apt install maven
+
 WORKDIR /code
 ADD * /code/
 RUN cd /code && mvn package && cp /code/targe/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar /app.jar
