@@ -2,7 +2,7 @@ FROM java:8
 
 WORKDIR /code
 ADD * /code/
-ADD .mvn /code
+ADD .mvn /code/.mvn
 RUN cd /code && ls -hal && ./mvnw spring-boot:repackage && cp /code/targe/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar /app.jar
 
 EXPOSE 8080
