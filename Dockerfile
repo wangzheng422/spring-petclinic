@@ -1,6 +1,6 @@
 FROM java:8
 
-RUN apt update && apt install maven
+RUN apt-get update && apt-get install maven
 
 WORKDIR /code
 ADD * /code/
