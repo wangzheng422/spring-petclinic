@@ -1,3 +1,11 @@
+# updated by wangzheng
+deploy on k8s:
+
+spring service name: petclinic-spring
+
+mysql service name: petclinic-mysql
+
+
 # Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)
 
 ## Understanding the Spring Petclinic application with a few diagrams
