@@ -1,7 +1,7 @@
 FROM java:8
 
 #WORKDIR /code
-RUN mkdir -p /cood
+RUN mkdir -p /code
 COPY * /code/
 COPY .mvn /code/.mvn/
 COPY src /code/src/
