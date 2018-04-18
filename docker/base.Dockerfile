@@ -2,7 +2,8 @@ FROM java:8
 
 #WORKDIR /code
 RUN mkdir -p /code && rm -rf /code/*
-COPY * /code/
+COPY pom.xml /code/
+COPY mvnw /code
 COPY .mvn /code/.mvn/
 COPY src /code/src/
 RUN cd /code && ls -hal /code && ./mvnw package -D maven.test.skip=true && rm -rf /code
