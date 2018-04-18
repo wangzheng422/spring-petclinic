@@ -10,5 +10,6 @@ docker tag spring-petclinic:mysql ${REGISTRY}/spring-petclinic:mysql
 
 docker build -f docker/build.Dockerfile -t ${REGISTRY}/spring-petclinic ./
 
+docker push ${REGISTRY}/spring-petclinic:base
 docker push ${REGISTRY}/spring-petclinic
 docker push ${REGISTRY}/spring-petclinic:mysql
